@@ -27,7 +27,6 @@ Thumbs.db
 cache/
 artifacts/
 typechain-types/
-deployments/
 
 # Frontend
 frontend/dist/
@@ -37,7 +36,6 @@ frontend/.vite/
 backend/cache/
 backend/artifacts/
 backend/typechain-types/
-backend/deployments/
 
 # GitHub Pages
 .github/workflows/deploy-pages.yml.bak
