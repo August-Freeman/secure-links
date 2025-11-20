@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Hardhat
+cache/
+artifacts/
+typechain-types/
+deployments/
+
+# Frontend
+frontend/dist/
+frontend/.vite/
+
+# Backend
+backend/cache/
+backend/artifacts/
+backend/typechain-types/
+backend/deployments/
+
+# GitHub Pages
+.github/workflows/deploy-pages.yml.bak
+
+
