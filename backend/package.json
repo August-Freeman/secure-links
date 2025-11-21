@@ -1,0 +1,40 @@
+{
+  "name": "secure-links-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf artifacts cache typechain-types",
+    "build": "hardhat compile",
+    "node": "hardhat node",
+    "deploy:local": "hardhat deploy --network hardhat && npm run postdeploy",
+    "deploy:anvil": "hardhat deploy --network anvil && npm run postdeploy",
+    "deploy:sepolia": "hardhat deploy --network sepolia && npm run postdeploy",
+    "export-abi": "ts-node scripts/export-abi.ts",
+    "export-frontend": "ts-node scripts/export-frontend.ts",
+    "postdeploy": "npm run export-abi && npm run export-frontend"
+  },
+  "devDependencies": {
+    "@fhevm/hardhat-plugin": "0.3.0-1",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.3",
+    "@nomicfoundation/hardhat-ethers": "^3.0.6",
+    "@nomicfoundation/hardhat-verify": "^2.0.9",
+    "@typechain/ethers-v6": "^0.5.1",
+    "@typechain/hardhat": "9.1.0",
+    "@zama-fhe/relayer-sdk": "0.3.0-5",
+    "chai": "^4.4.1",
+    "ethers": "^6.13.1",
+    "hardhat": "^2.22.10",
+    "hardhat-deploy": "^0.11.45",
+    "hardhat-gas-reporter": "^2.2.1",
+    "rimraf": "^5.0.5",
+    "solidity-coverage": "^0.8.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "0.9.1",
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
+
+
